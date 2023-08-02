@@ -74,6 +74,7 @@ public class IOService {
 			fw = new FileWriter("test1.txt"); // 외부 파일과 연결하는 스트림 객체 생성
 			
 			String str = "안녕하세요. Hello. 1234 !@#";
+//			String str = "안녕하세요. Hello. \n1234 !@#";
 			
 			fw.write(str);
 			// 실행 했는데 출력이 안되고 있다.
@@ -122,6 +123,7 @@ public class IOService {
 				}
 				
 				// 반복종료가 안됐으면 char로 강제 형변환하여 문자로 출력
+//				System.out.print( data );
 				System.out.print( (char)data );
 				
 			}
@@ -157,7 +159,7 @@ public class IOService {
 				if(data == -1) {
 					break;
 				}
-				
+
 				System.out.print( (char)data );
 			}
 			
